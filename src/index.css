@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(107, 39, 121);
+    transition: ease 0.5s;
+}
+
+.header {
+    display: block;
+    background-color: rgba(37, 20, 48,0.7);
+    letter-spacing: 3px;
+    font-size: larger;
+    height: 10vh;
+    max-height: 12vh;
+    min-height: 40px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(218, 12, 115);
+    font-weight: 800;
+    transition: all ease-in-out 0.2s;
+}
+
+.header span {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.header:hover {
+    letter-spacing: 5px;
+}
+
+.card {
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+    width: 60%; 
+    background-color: #ffffff;
+    margin:auto;
+    margin-top: 20px;
+    transition: ease 0.5s;
+}
+
+.rating {
+    position: absolute;
+    display: inline-block;
+    top: -15px;
+    margin: 0;
+    left: -15px;
+    border-radius: 50%;
+    background-color: rgb(218, 12, 115);
+    color: white;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.feedbackText {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.close{
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.edit{
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 30px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 8px;
+    cursor: pointer;
+}
+
+.feedbackStats {
+    color: white;
+    width: 60%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.feedbackForm{
+    width: 60%;
+    display: block;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.feedbackForm .ratingContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+}
+
+
+.feedbackForm .rating-in-form {
+    appearance: none;
+    display: block;
+    border-radius: 50%;
+    background-color: rgba(165, 175, 175, 0.2);
+    line-height: 40px;
+    margin-right: 0px;
+    width: 40px;
+    height: 40px;
+}
+
+.feedbackForm .rating-in-form:checked{
+    background-color: rgb(218, 12, 115);
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.addButton {
+    padding: 5px;
+    width: 40px;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+.warning {
+    color: red;
+    font-size: medium;
+    font-weight: 700;
+}
+
+.loader {
+    text-align: center;
+    font-size: larger;
+    color: #ffffff;
+    z-index: 1000000;
+}
+
+.labelforinput {
+    display: flex;
+    position: relative;
+}
+
+.labelforinput span {
+    position: absolute;
+    left: 38%;
+    top: 20%;
+}
+
+.inputRadioButton:last-child span {
+    left: 25%;
+}
